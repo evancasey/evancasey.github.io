@@ -1,0 +1,179 @@
+%!TEX program = pdflatex
+\documentclass[11pt]{article}
+
+% # FONTS
+
+\usepackage[T1]{fontenc}
+\renewcommand*\ttdefault{lmvtt}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{amsmath}
+\usepackage[scaled=0.92]{PTSans}
+
+% # GEOMETRY
+
+\usepackage[
+  paper  = letterpaper,
+  left   = 1.0in,
+  right  = 1.0in,
+  top    = 1.25in,
+  bottom = 1.25in,
+]{geometry}
+\usepackage[final,expansion=alltext]{microtype}
+\usepackage[english]{babel}
+\usepackage[parfill]{parskip}
+\usepackage{afterpage}
+\usepackage{framed}
+\usepackage{enumitem}
+\usepackage{pifont}     % needed for dingbats for colophon
+
+% # COLOR
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{shadecolor}{gray}{0.9}
+
+% # HEADERS
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\pagestyle{fancy}
+\lhead{\textcolor{gray}{\emph{Evan Casey}}}
+\rhead{\textcolor{gray}{\thepage}}
+\renewcommand{\headrulewidth}{0pt}
+
+% Renew section
+\renewcommand{\section}[1]
+{\vspace{1.0\baselineskip}{\Large\textbf{#1}}}
+
+% Generate colophon at the end of the document
+\newcommand{\makecolophon}
+{\centering\ding{118} Last modified on \today~\ding{118}}
+
+% Indent
+\def\D{\par\noindent\makebox[1em][l]{-- }\hangindent1em}
+
+\begin{document}
+\thispagestyle{empty}
+
+\parbox[c][0.5in]{3.4in}{\huge \textbf{Evan Casey}}
+\parbox[c][0.5in]{2.5in}{%
+\small
+\vspace{17ex}
+\texttt{ev@ancasey.com}
+\texttt{http://www.ev.ancasey.com/}
+}
+
+Aspiring artificial intelligence researcher \\
+New York, NY \\
+
+\section{Education}
+
+\begin{itemize}[leftmargin=12pt]
+  \item[] B.A. Mathematics, Economics, minor in Computer Science \\
+Claremont McKenna College\hfill 2010--2014
+\end{itemize}
+
+\section{Experience}
+
+\begin{itemize}[leftmargin=12pt]
+  \item[] \textbf{Software Engineer (contract)} -- Narrative I/O\hfill July 2016 - present
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Building data infrastructure using Spark and Redshift
+    \end{enumerate}
+  \item[] \textbf{Sabbatical} -- Recurse Center \hfill March 2016 - June 2016
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Studied machine learning and neural networks
+    \end{enumerate}
+  \item[] \textbf{Software Engineer} -- Tapad (acquired by Telenor in Feb. 2016) \hfill May 2014 - March 2016 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Developed and maintained components of the petabyte-scale data infrastructure powering Tapad's real-time ad bidding systems and the Device Graph, a graph based representation of device ownership that uses a probabilistic model to infer the relationship between devices. 
+      \item Designed and authored an end-to-end ad inventory forecasting system that summarized billions of events daily using Elasticsearch.
+      \item Prototyped and benchmarked several large-scale analytic data stores (Spark-sql, Impala, Druid) as part of project to improve access to our datasets stored HDFS. 
+      \item Helped scale the engineering team by 2x, interviewed countless candidates, supervised an intern during the summer of 2015.
+      \item Tech used: Scala, Spark/Hadoop, Kafka, Zookeeper
+    \end{enumerate}
+  \item[] \textbf{Software Engineering Intern} -- One Kings Lane \hfill Summer 2013 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Helped write Babar, an internal A/B testing framework using Ruby on Rails
+    \end{enumerate}
+
+\section{Achievements}
+
+\begin{itemize}[leftmargin=12pt]
+  \item[] Speaker -- HackNY masters series
+  \hfill 2015
+  \item[] HackNY Fellowship -- Summer internship program
+  \hfill 2014
+  \item[] Outstanding thesis award -- Mathematics
+  \hfill 2014
+  \item[] Finalist -- Greylock Hackfest 
+  \hfill 2013
+
+\end{itemize}
+
+\section{Publications}
+
+\textsc{Undergraduate Thesis}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Scalable Collaborative Filtering Recommendation Algorithms on Apache Spark \hfill 2014 \\
+  \textbf{Evan Casey}, Deanna Needell
+\end{itemize}
+
+\section{Software}
+\begin{enumerate}
+  \item
+  {Demeter}: A library for deep reinforcement learning in Tensorflow
+  \hfill
+  2016
+  \item
+  {scala-nn}: A lightweight neural network framework in Scala
+  \hfill
+  2016
+  \item
+  {bandit-http-server}: A redis-backed HTTP server for multi-armed bandit algorithms
+  \hfill
+  2013
+\end{enumerate}
+
+%\section{Popular Press}
+%\section{Awarded Grants}
+
+%\section{Industry}
+
+\section{Teaching}
+\begin{enumerate}
+  \item
+  Teaching Assistant |
+  Claremont McKenna College
+  \hfill 2012
+  \\
+  MATH 152:
+  Statistical Inference
+\end{enumerate}
+
+\section{Relevant Skills}
+  \item[] \textbf{Programming Languages} \\
+    \hspace*{1em} $\bullet $ Scala, Python, SQL, Javascript
+  \item[] \textbf{Systems and Tools} \\
+    \hspace*{1em} $\bullet $ Tensorflow, Spark, Hadoop, Kafka, Elasticsearch, Docker
+
+\section{Other}
+
+Lived in Mongolia for a summer. Won an \$875,000 grant for a skatepark in my hometown. DVORAK user. Film photography enthusiast. 
+
+%\textsc{Senior Program Committee}
+%\textsc{Associate Editor and Editorial Board}
+
+
+%\textsc{Grant Reviewing}
+%\textsc{Former Ph.D. Students}
+%\textsc{Current Ph.D. Students}
+%\textsc{Postdoctoral Fellows}
+%\textsc{Other Ph.D. Thesis Committees}
+%\textsc{Mentoring}
+%\textsc{Advising and Consulting}
+
+
+%\vfill
+%\makecolophon
+
+\end{document}
