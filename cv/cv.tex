@@ -25,6 +25,7 @@
 \usepackage{framed}
 \usepackage{enumitem}
 \usepackage{pifont}     % needed for dingbats for colophon
+\usepackage{hyperref}
 
 % # COLOR
 
@@ -69,45 +70,57 @@ New York, NY \\
 
 \begin{itemize}[leftmargin=12pt]
   \item[] B.A. Mathematics, Economics, minor in Computer Science \\
-Claremont McKenna College\hfill 2010--2014
+    \textbf{Claremont McKenna College}\hfill 2010--2014 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Selected coursework: Machine Learning, Real Analysis, Complex Analysis, Probability Theory, Statistical Inference, Differential Equations, Discrete Mathematics, Data Structures \& Algorithms
+    \end{enumerate}
 \end{itemize}
 
 \section{Experience}
 
 \begin{itemize}[leftmargin=12pt]
-  \item[] \textbf{Software Engineer (contract)} -- Narrative I/O\hfill July 2016 - present
+  \item[] \textbf{Software Engineer (part-time)} -- Narrative I/O\hfill July 2016 - present
     \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Building data infrastructure using Spark and Redshift
+      \item Architected and implemented the ETL pipeline that fuels all Redshift-sourced analytics over heterogeneous location and impression data generated from Narrative's real-time data exchange.
+      \item Tech used: Spark, Redshift, Parquet, AWS.
     \end{enumerate}
   \item[] \textbf{Sabbatical} -- Recurse Center \hfill March 2016 - June 2016
     \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Studied machine learning and neural networks
+      \item Self-directed research in machine learning, neural networks, and reinforcement learning.
     \end{enumerate}
   \item[] \textbf{Software Engineer} -- Tapad (acquired by Telenor in Feb. 2016) \hfill May 2014 - March 2016 
     \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
       \item Developed and maintained components of the petabyte-scale data infrastructure powering Tapad's real-time ad bidding systems and the Device Graph, a graph based representation of device ownership that uses a probabilistic model to infer the relationship between devices. 
-      \item Designed and authored an end-to-end ad inventory forecasting system that summarized billions of events daily using Elasticsearch.
-      \item Prototyped and benchmarked several large-scale analytic data stores (Spark-sql, Impala, Druid) as part of project to improve access to our datasets stored HDFS. 
-      \item Helped scale the engineering team by 2x, interviewed countless candidates, supervised an intern during the summer of 2015.
+      \item Designed and authored an end-to-end ad inventory forecasting system that summarizes billions of events daily using Elasticsearch.
+      \item Prototyped and benchmarked several large-scale analytic data stores (Spark-sql, Impala, Druid) as part of project to improve access to unstructured data stored in HDFS. 
       \item Tech used: Scala, Spark/Hadoop, Kafka, Zookeeper
     \end{enumerate}
   \item[] \textbf{Software Engineering Intern} -- One Kings Lane \hfill Summer 2013 
     \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Helped write Babar, an internal A/B testing framework using Ruby on Rails
+      \item Prototyped a product recommendation service based on multi-armed bandits.
+      \item Built Babar with one other intern, an A/B testing framework using Ruby on Rails.
     \end{enumerate}
 
 \section{Achievements}
 
 \begin{itemize}[leftmargin=12pt]
-  \item[] Speaker -- HackNY masters series
-  \hfill 2015
-  \item[] HackNY Fellowship -- Summer internship program
+  \item[] Outstanding thesis award -- Mathematics and Computer Science
   \hfill 2014
-  \item[] Outstanding thesis award -- Mathematics
+  \item[] HackNY Fellowship -- Summer internship program
   \hfill 2014
   \item[] Finalist -- Greylock Hackfest 
   \hfill 2013
 
+\end{itemize}
+
+\section{Talks}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Deep Reinforcement Learning with Policy Optimization -- New York Times Research
+  \hfill 2016
+  \item[] Introduction to Neural Networks with Tensorflow -- Recurse Center Workshop
+  \hfill 2016
+  \item[] Scalable Machine Learning with Apache Spark -- HackNY masters series
+  \hfill 2015
 \end{itemize}
 
 \section{Publications}
@@ -121,15 +134,19 @@ Claremont McKenna College\hfill 2010--2014
 \section{Software}
 \begin{enumerate}
   \item
-  {Demeter}: A library for deep reinforcement learning in Tensorflow
+    \texttt{\href{http://github.com/evancasey/demeter}{demeter}}: A library for scalable deep reinforcement learning in Tensorflow. 
+  \hfill
+  2016 
+  \begin{enumerate}[leftmargin=1em,labelindent=16pt,label=$\bullet$]
+    \item Core capabalities include robust, extensible implementations of REINFORCE, GAE, TRPO, and A3C and utilities to deploy these algorithms on OpenAI Gym and Universe.
+  \end{enumerate}
+  
+  \item
+    \texttt{\href{http://github.com/evancasey/scala-nn}{scala-nn}}: A lightweight neural network framework in Scala
   \hfill
   2016
   \item
-  {scala-nn}: A lightweight neural network framework in Scala
-  \hfill
-  2016
-  \item
-  {bandit-http-server}: A redis-backed HTTP server for multi-armed bandit algorithms
+    \texttt{\href{http://github.com/evancasey/bandit-http-server}{bandit-http-server}}: A redis-backed HTTP server for multi-armed bandit algorithms
   \hfill
   2013
 \end{enumerate}
@@ -158,7 +175,7 @@ Claremont McKenna College\hfill 2010--2014
 
 \section{Other}
 
-Lived in Mongolia for a summer. Won an \$875,000 grant for a skatepark in my hometown. DVORAK user. Film photography enthusiast. 
+I organize Data Science Fridays, a machine learning reading group that meets weekly at the Recurse Center. In my free time, I like to skateboard and take photographs. In high school, I raised \$875,000 in grant money for a skate park in my hometown and once lived in Mongolia for 3 months.
 
 %\textsc{Senior Program Committee}
 %\textsc{Associate Editor and Editorial Board}
