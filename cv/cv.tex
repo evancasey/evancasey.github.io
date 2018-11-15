@@ -15,8 +15,8 @@
   paper  = letterpaper,
   left   = 1.0in,
   right  = 1.0in,
-  top    = 1.25in,
-  bottom = 1.25in,
+  top    = 1.0in,
+  bottom = 1.0in,
 ]{geometry}
 \usepackage[final,expansion=alltext]{microtype}
 \usepackage[english]{babel}
@@ -59,12 +59,78 @@
 \parbox[c][0.5in]{2.5in}{%
 \small
 \vspace{17ex}
-\texttt{ev@ancasey.com}\\
-\texttt{http://ev.ancasey.com}
+\texttt{ev.ancasey.com} \\
+\texttt{github.com/evancasey}
 }
 
-Artificial intelligence researcher \\
+ML and Deep Learning Researcher \\
 New York, NY 
+
+\section{Experience}
+
+\begin{itemize}[leftmargin=12pt]
+  \item[] \textbf{Research Engineer} -- Cogitai \hfill May 2017 - July 2018
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Joined the company as the first software engineer on the robotics team alongside a team of 6-10 research scientists.
+      \item Core contributor to Cogitai's machine learning and robotics libraries. Implemented, tuned, and productionized reinforcement (A2C, PPO, DQN, SAC, etc) and contextual bandit (LinUCB) algorithms.
+      \item Research and development on action-conditional representations for RL, recurrent policy learning, hierchical RL, and learning from human preferences.
+    \end{enumerate}
+  \item[] \textbf{Sabbatical} -- Recurse Center \hfill March 2016 - June 2016
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item 3-month sabbatical of self-directed research in deep learning and reinforcement learning. Read lots of papers, implemented some of them.
+    \end{enumerate}
+  \item[] \textbf{Date Engineer} -- Tapad (acquired by Telenor in Feb. 2016) \hfill May 2014 - March 2016 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Built and maintained large-scale (100TB+) Hadoop pipelines powering a graph-based representation of device ownership that uses a probabilistic model to infer relationships.
+      \item Led development of Tapad's ad inventory forecasting system, which ingests billion of records daily in Elasticsearch. Researched and implemented algorithms for large-scale audience clustering.
+      \item Backend development on a realtime ad buying platform. Low latency (95th percentile response time around 25ms), high throughput (peaking above 750k QPS).
+    \end{enumerate}
+  \item[] \textbf{Engineering Intern} -- One Kings Lane \hfill Summer 2013 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Built a product recommendation service based on multi-armed bandits and contributed to Babar, an A/B testing framework using Ruby on Rails.
+    \end{enumerate}
+\end{itemize}
+
+
+\section{Teaching}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Workshop Instructor and Co-founder | AI Atelier (\texttt{ai-atelier.com}})
+  \hfill May and June 2018
+  \\ Applied Deep Learning (Tensorflow)
+  \item[] Teaching Assistant | Claremont McKenna College
+  \hfill 2012
+  \\ MATH 152: Statistical Inference
+\end{itemize}
+
+\section{Relevant Skills}
+\begin{itemize}
+  \item[] \textbf{Programming Languages} 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Python, Scala, Java, Javascript
+    \end{enumerate}
+  \item[] \textbf{Systems and Tools} 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Tensorflow, MxNet, PyTorch, Spark, Hadoop, Kafka, Elasticsearch, Docker
+    \end{enumerate}
+\end{itemize}
+
+
+\section{Publications}
+
+\textsc{Conference Papers}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Thinking Between the Lines: Guided 2D Animation with Generative Adversarial Networks \hfill 2018 \\
+  \textbf{Evan Casey}, Harry Teitelman \\
+  Accepted as Poster at NIPS Workshop on Machine Learning for Creativity and Design
+\end{itemize}
+
+\textsc{Undergraduate Thesis}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Scalable Collaborative Filtering Recommendation Algorithms on Apache Spark \hfill 2014 \\
+  \textbf{Evan Casey}, Deanna Needell \\
+  Outstanding Thesis in Mathematics and Computer Science
+    
+\end{itemize}
 
 \section{Education}
 
@@ -76,114 +142,26 @@ New York, NY
     \end{enumerate}
 \end{itemize}
 
-\section{Experience}
-
-\begin{itemize}[leftmargin=12pt]
-  \item[] \textbf{Software Engineer (part-time)} -- Narrative I/O\hfill July 2016 - present
-    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Architected and implemented the ETL pipeline that fuels all Redshift-sourced analytics over heterogeneous location and impression data generated from Narrative's real-time data exchange.
-      \item Tech used: Spark, Redshift, Parquet, AWS.
-    \end{enumerate}
-  \item[] \textbf{Sabbatical} -- Recurse Center \hfill March 2016 - June 2016
-    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Self-directed research in machine learning, neural networks, and reinforcement learning.
-    \end{enumerate}
-  \item[] \textbf{Software Engineer} -- Tapad (acquired by Telenor in Feb. 2016) \hfill May 2014 - March 2016 
-    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Developed and maintained components of the petabyte-scale data infrastructure powering Tapad's real-time ad bidding systems and the Device Graph, a graph based representation of device ownership that uses a probabilistic model to infer the relationship between devices. 
-      \item Architected and implemented an end-to-end ad inventory forecasting system that summarizes billions of events daily using Elasticsearch. Achieved vastly superior results over the previous system in terms of both accuracy and speed.
-      \item Configured and benchmarked several cutting-edge, large-scale analytic data stores (Spark-sql, Impala, Druid) as part of project to improve access to unstructured data stored in HDFS. 
-      \item Tech used: Scala, Spark/Hadoop, Kafka, Zookeeper
-    \end{enumerate}
-  \item[] \textbf{Software Engineering Intern} -- One Kings Lane \hfill Summer 2013 
-    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Built a product recommendation service based on multi-armed bandits and contributed to Babar, an A/B testing framework using Ruby on Rails.
-    \end{enumerate}
-
 \section{Achievements}
 
 \begin{itemize}[leftmargin=12pt]
-  \item[] Outstanding thesis award -- Mathematics and Computer Science
-  \hfill 2014
   \item[] HackNY Fellowship -- Summer internship program
   \hfill 2014
   \item[] Finalist -- Greylock Hackfest 
   \hfill 2013
   \item[] Janet Myhre \& Leon Hollerman Scholarship
   \hfill 2010 - 2014
-
 \end{itemize}
 
-\section{Talks}
-\begin{itemize}[leftmargin=12pt]
-  \item[] Deep Reinforcement Learning with Policy Optimization -- New York Times Research
-  \hfill 2016
-  \item[] Introduction to Neural Networks with Tensorflow -- Recurse Center workshop
-  \hfill 2016
-  \item[] Scalable Machine Learning with Apache Spark -- HackNY masters series
-  \hfill 2015
-\end{itemize}
-
-\section{Publications}
-
-\textsc{Undergraduate Thesis}
-\begin{itemize}[leftmargin=12pt]
-  \item[] Scalable Collaborative Filtering Recommendation Algorithms on Apache Spark \hfill 2014 \\
-  \textbf{Evan Casey}, Deanna Needell
-\end{itemize}
-
-\section{Software}
-\begin{enumerate}
-  \item
-    \texttt{\href{http://github.com/evancasey/demeter}{demeter}}: A library for scalable deep reinforcement learning in Tensorflow. 
-  \hfill
-  2016 
-  \begin{enumerate}[leftmargin=1em,labelindent=16pt,label=$\bullet$]
-    \item Core capabalities include robust, extensible implementations of REINFORCE, GAE, TRPO, and A3C and utilities to deploy these algorithms on OpenAI Gym and Universe.
-  \end{enumerate}
-  
-  \item
-    \texttt{\href{http://github.com/evancasey/scala-nn}{scala-nn}}: A lightweight neural network framework in Scala
-  \hfill
-  2016
-  \begin{enumerate}[leftmargin=1em,labelindent=16pt,label=$\bullet$]
-    \item Core capabilities include a DSL-like interface for creating networks of arbitrary size/architecture and an optimization library for backpropagation-style weight updates.
-  \end{enumerate}
-  \item
-    \texttt{\href{http://github.com/evancasey/bandit-http-server}{bandit-http-server}}: A redis-backed HTTP server for multi-armed bandit algorithms
-  \hfill
-  2013
-\end{enumerate}
 
 %\section{Popular Press}
 %\section{Awarded Grants}
 
 %\section{Industry}
 
-\section{Teaching}
-\begin{enumerate}
-  \item
-  Teaching Assistant |
-  Claremont McKenna College
-  \hfill 2012
-  \\
-  MATH 152:
-  Statistical Inference
-\end{enumerate}
-
-\section{Relevant Skills}
-  \item[] \textbf{Programming Languages} 
-  \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-    \item Scala, Python, SQL, Javascript
-  \end{enumerate}
-  \item[] \textbf{Systems and Tools} 
-  \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-    \item Tensorflow, Spark, Hadoop, Kafka, Elasticsearch, Docker
-  \end{enumerate}
-
 \section{Other}
 
-I organize Data Science Fridays, a machine learning reading group that meets weekly at the Recurse Center. In my free time, I like to skateboard and take photographs. In high school, I raised \$875,000 in grant money for a skate park in my hometown and once lived in Mongolia for 3 months.
+Outside of machine learning research, I am a skateboarder and visual artist. In high school, I raised \$875,000 in grant money for a skate park in my hometown and once lived in Mongolia for a summer.
 
 %\textsc{Senior Program Committee}
 %\textsc{Associate Editor and Editorial Board}
