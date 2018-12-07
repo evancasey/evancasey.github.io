@@ -1,0 +1,182 @@
+%!TEX program = pdflatex
+\documentclass[11pt]{article}
+
+% # FONTS
+
+\usepackage[T1]{fontenc}
+\renewcommand*\ttdefault{lmvtt}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{amsmath}
+\usepackage[scaled=0.92]{PTSans}
+
+% # GEOMETRY
+
+\usepackage[
+  paper  = letterpaper,
+  left   = 1.0in,
+  right  = 1.0in,
+  top    = 1.0in,
+  bottom = 1.0in,
+]{geometry}
+\usepackage[final,expansion=alltext]{microtype}
+\usepackage[english]{babel}
+\usepackage[parfill]{parskip}
+\usepackage{afterpage}
+\usepackage{framed}
+\usepackage{enumitem}
+\usepackage{pifont}     % needed for dingbats for colophon
+\usepackage{hyperref}
+
+% # COLOR
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{shadecolor}{gray}{0.9}
+
+% # HEADERS
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\pagestyle{fancy}
+\lhead{\textcolor{gray}{\emph{Evan Casey}}}
+\rhead{\textcolor{gray}{\thepage}}
+\renewcommand{\headrulewidth}{0pt}
+
+% Renew section
+\renewcommand{\section}[1]
+{\vspace{1.0\baselineskip}{\Large\textbf{#1}}}
+
+% Generate colophon at the end of the document
+\newcommand{\makecolophon}
+{\centering\ding{118} Last modified on \today~\ding{118}}
+
+% Indent
+\def\D{\par\noindent\makebox[1em][l]{-- }\hangindent1em}
+
+\begin{document}
+\thispagestyle{empty}
+
+\parbox[c][0.5in]{3.4in}{\huge \textbf{Evan Casey}}
+\parbox[c][0.5in]{2.5in}{%
+\small
+\vspace{17ex}
+\texttt{ev.ancasey.com} \\
+\texttt{github.com/evancasey}
+}
+
+ML and Deep Learning Researcher \\
+New York, NY 
+
+\section{Experience}
+
+\begin{itemize}[leftmargin=12pt]
+  \item[] \textbf{Research Engineer} -- Cogitai \hfill May 2017 - July 2018
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Joined the company as the first software engineer on the robotics team alongside a team of 6-10 research scientists.
+      \item Core contributor to Cogitai's machine learning and robotics libraries. Implemented, tuned, and productionized reinforcement (A2C, PPO, DQN, SAC, etc) and contextual bandit (LinUCB) algorithms.
+      \item Research and development on action-conditional representations for RL, recurrent policy learning, hierchical RL, and learning from human preferences.
+    \end{enumerate}
+  \item[] \textbf{Sabbatical} -- Recurse Center \hfill March 2016 - June 2016
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item 3-month sabbatical of self-directed research in deep learning and reinforcement learning. Read lots of papers, implemented some of them.
+    \end{enumerate}
+  \item[] \textbf{Date Engineer} -- Tapad (acquired by Telenor in Feb. 2016) \hfill May 2014 - March 2016 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Built and maintained large-scale (100TB+) Hadoop pipelines powering a graph-based representation of device ownership that uses a probabilistic model to infer relationships.
+      \item Led development of Tapad's ad inventory forecasting system, which ingests billion of records daily in Elasticsearch. Researched and implemented algorithms for large-scale audience clustering.
+      \item Backend development on a realtime ad buying platform. Low latency (95th percentile response time around 25ms), high throughput (peaking above 750k QPS).
+    \end{enumerate}
+  \item[] \textbf{Engineering Intern} -- One Kings Lane \hfill Summer 2013 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Built a product recommendation service based on multi-armed bandits and contributed to Babar, an A/B testing framework using Ruby on Rails.
+    \end{enumerate}
+\end{itemize}
+
+
+\section{Teaching}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Workshop Instructor and Co-founder | AI Atelier (\texttt{ai-atelier.com}})
+  \hfill May and June 2018
+  \\ Applied Deep Learning (Tensorflow)
+  \item[] Teaching Assistant | Claremont McKenna College
+  \hfill 2012
+  \\ MATH 152: Statistical Inference
+\end{itemize}
+
+\section{Relevant Skills}
+\begin{itemize}
+  \item[] \textbf{Programming Languages} 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Python, Scala, Java, Javascript
+    \end{enumerate}
+  \item[] \textbf{Systems and Tools} 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Tensorflow, MxNet, PyTorch, Spark, Hadoop, Kafka, Elasticsearch, Docker
+    \end{enumerate}
+\end{itemize}
+
+
+\section{Publications}
+
+\textsc{Conference Papers}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Thinking Between the Lines: Guided 2D Animation with Generative Adversarial Networks \hfill 2018 \\
+  \textbf{Evan Casey}, Harry Teitelman \\
+  Accepted as Poster at NIPS Workshop on Machine Learning for Creativity and Design
+\end{itemize}
+
+\textsc{Undergraduate Thesis}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Scalable Collaborative Filtering Recommendation Algorithms on Apache Spark \hfill 2014 \\
+  \textbf{Evan Casey}, Deanna Needell \\
+  Outstanding Thesis in Mathematics and Computer Science
+    
+\end{itemize}
+
+\section{Education}
+
+\begin{itemize}[leftmargin=12pt]
+  \item[] B.A. Mathematics, Economics, minor in Computer Science \\
+    \textbf{Claremont McKenna College}\hfill 2010--2014 
+    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Selected coursework: Machine Learning, Real Analysis, Complex Analysis, Probability Theory, Statistical Inference, Differential Equations, Discrete Mathematics, Data Structures \& Algorithms
+    \end{enumerate}
+\end{itemize}
+
+\section{Achievements}
+
+\begin{itemize}[leftmargin=12pt]
+  \item[] HackNY Fellowship -- Summer internship program
+  \hfill 2014
+  \item[] Finalist -- Greylock Hackfest 
+  \hfill 2013
+  \item[] Janet Myhre \& Leon Hollerman Scholarship
+  \hfill 2010 - 2014
+\end{itemize}
+
+
+%\section{Popular Press}
+%\section{Awarded Grants}
+
+%\section{Industry}
+
+\section{Other}
+
+Outside of machine learning research, I am a skateboarder and visual artist. In high school, I raised \$875,000 in grant money for a skate park in my hometown and once lived in Mongolia for a summer.
+
+%\textsc{Senior Program Committee}
+%\textsc{Associate Editor and Editorial Board}
+
+
+%\textsc{Grant Reviewing}
+%\textsc{Former Ph.D. Students}
+%\textsc{Current Ph.D. Students}
+%\textsc{Postdoctoral Fellows}
+%\textsc{Other Ph.D. Thesis Committees}
+%\textsc{Mentoring}
+%\textsc{Advising and Consulting}
+
+
+%\vfill
+%\makecolophon
+
+\end{document}
