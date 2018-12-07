@@ -1,9 +1,4 @@
-[ev.ancasey.com](http://ev.ancasey.com)
+[evcasey.com](http://evcasey.com)
 ---------------------------------------
 
-### Usage
-
-```bash
-s3cmd put --recursive <contents-to-upload> s3://ancasey.com/
-```
-
+website
