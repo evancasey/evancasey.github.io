@@ -8,6 +8,8 @@
 \usepackage[bitstream-charter]{mathdesign}
 \usepackage{amsmath}
 \usepackage[scaled=0.92]{PTSans}
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+
 
 % # GEOMETRY
 
@@ -59,7 +61,7 @@
 \parbox[c][0.5in]{2.5in}{%
 \small
 \vspace{17ex}
-\texttt{ev.ancasey.com} \\
+\texttt{evcasey.com} \\
 \texttt{github.com/evancasey}
 }
 
@@ -69,11 +71,15 @@ New York, NY
 \section{Experience}
 
 \begin{itemize}[leftmargin=12pt]
+ \item[] \textbf{Consultant} -- AI Reverie \hfill August 2018 - Present
+   \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
+      \item Researching and building systems for improving computer vision with synthetic data, transfer learning, and domain adaptation (both pixel-level and model-level).
+    \end{enumerate}
   \item[] \textbf{Research Engineer} -- Cogitai \hfill May 2017 - July 2018
     \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Joined the company as the first software engineer on the robotics team alongside a team of 6-10 research scientists.
-      \item Core contributor to Cogitai's machine learning and robotics libraries. Implemented, tuned, and productionized reinforcement (A2C, PPO, DQN, SAC, etc) and contextual bandit (LinUCB) algorithms.
-      \item Research and development on action-conditional representations for RL, recurrent policy learning, hierchical RL, and learning from human preferences.
+      \item Research software engineer on the robotics team working on self-supervising systems for visual perception and manipulation under the supervision of Satinder Singh and Peter Stone.
+      \item Developed large sections of Cogitai's machine learning and robotics libraries. Implemented, and productionized various RL algorithms (A2C, PPO, DQN, SAC) within a large scale learning system.
+      \item Led the engineering effort on an action-conditional world model that learns from unlabeled sensory experiences. Used the learned features to perform diverse tasks on physical robots.
     \end{enumerate}
   \item[] \textbf{Sabbatical} -- Recurse Center \hfill March 2016 - June 2016
     \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
@@ -91,30 +97,6 @@ New York, NY
     \end{enumerate}
 \end{itemize}
 
-
-\section{Teaching}
-\begin{itemize}[leftmargin=12pt]
-  \item[] Workshop Instructor and Co-founder | AI Atelier (\texttt{ai-atelier.com}})
-  \hfill May and June 2018
-  \\ Applied Deep Learning (Tensorflow)
-  \item[] Teaching Assistant | Claremont McKenna College
-  \hfill 2012
-  \\ MATH 152: Statistical Inference
-\end{itemize}
-
-\section{Relevant Skills}
-\begin{itemize}
-  \item[] \textbf{Programming Languages} 
-    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Python, Scala, Java, Javascript
-    \end{enumerate}
-  \item[] \textbf{Systems and Tools} 
-    \begin{enumerate}[leftmargin=2em,labelindent=16pt,label=$\bullet$]
-      \item Tensorflow, MxNet, PyTorch, Spark, Hadoop, Kafka, Elasticsearch, Docker
-    \end{enumerate}
-\end{itemize}
-
-
 \section{Publications}
 
 \textsc{Conference Papers}
@@ -130,6 +112,29 @@ New York, NY
   \textbf{Evan Casey}, Deanna Needell \\
   Outstanding Thesis in Mathematics and Computer Science
     
+\end{itemize}
+
+
+\section{Teaching and Talks}
+\begin{itemize}[leftmargin=12pt]
+  \item[] Workshop | AI Atelier
+  \hfill June 2018
+  \\ Applied Deep Learning with Tensorflow 
+  \item[] Workshop | AI Atelier
+  \hfill May 2018
+  \\ Applied Deep Learning with Tensorflow
+  \item[] Talk | New York Times Research
+  \hfill November 2016
+  \\  Deep Reinforcement Learning with Policy Optimization
+  \item[] Workshop | Recurse Center
+  \hfill June 2016 
+  \\ Introduction to Neural Networks with Tensorflow
+  \item[] Talk | HackNY Masters Series
+  \hfill October 2015
+  \\ Scalable Machine Learning with Apache Spark
+  \item[] Teaching Assistant | Claremont McKenna College
+  \hfill Spring 2012
+  \\ MATH 152: Statistical Inference
 \end{itemize}
 
 \section{Education}
@@ -180,3 +185,4 @@ Outside of machine learning research, I am a skateboarder and visual artist. In 
 %\makecolophon
 
 \end{document}
+
