@@ -24,10 +24,11 @@ a:hover {
 }
 
 #main {
-  width: 1000px;
+  width: 900px;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1.0rem;
 }
 
 #main h1 {
@@ -52,12 +53,6 @@ a:hover {
   text-rendering: optimizeLegibility;
   font-size: 1.31951rem;
   line-height: 2; /* Increased line-height for more space between line breaks */
-}
-
-#main br {
-  display: block;
-  margin-top: 0.75em;
-  content: "";
 }
 
 #main p {
