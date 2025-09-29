@@ -24,7 +24,7 @@ a:hover {
 }
 
 #main {
-  width: 650px;
+  width: 850px;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -51,7 +51,7 @@ a:hover {
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 1.31951rem;
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 #main p {
