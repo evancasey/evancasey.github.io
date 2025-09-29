@@ -24,7 +24,7 @@ a:hover {
 }
 
 #main {
-  width: 850px;
+  width: 1000px;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -51,7 +51,13 @@ a:hover {
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 1.31951rem;
-  line-height: 1.4;
+  line-height: 2; /* Increased line-height for more space between line breaks */
+}
+
+#main br {
+  display: block;
+  margin-top: 0.75em;
+  content: "";
 }
 
 #main p {
